@@ -7,7 +7,7 @@
   "evaluator_version": "v1",
   "closes_at": null,
   "anonymous": true,
-  "accepting_submissions": false,
+  "accepting_submissions": true,
   "service_url": "https://script.google.com/macros/s/AKfycbz-LjlcVuaQ0fbjhPGhYtDi4XxTItsGMrmSXUkP4X59IkPv6WF-sJ-P3dHDJtJlBTb5/exec",
   "submit_url": "https://script.google.com/macros/s/AKfycbz-LjlcVuaQ0fbjhPGhYtDi4XxTItsGMrmSXUkP4X59IkPv6WF-sJ-P3dHDJtJlBTb5/exec?challenge=stable-challenge-world-models"
 }
