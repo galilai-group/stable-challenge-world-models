@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Challenge leaderboard</title><link rel="stylesheet" href="style.css">
+<script src="leaderboard.js" defer></script></head><body><main>
+<p class="eyebrow">RESEARCH CHALLENGE</p>
+<div class="topline"><h1 id="title">Leaderboard</h1><a id="submit" class="button" hidden>Submit compiled model</a></div>
+<p id="description"></p><p class="muted" id="details"></p><p class="limits" id="limits"></p>
+<section class="card"><div class="topline"><h2>Leaderboard</h2>
+<input type="search" id="search" aria-label="Find a participant" placeholder="Find participant…"></div>
+<label for="group-filter" id="group-filter-label">Filter by group</label><select id="group-filter"><option value="">All participants</option></select><p class="muted" id="policy"></p><div class="table-wrap"><table>
+<thead><tr id="columns"></tr></thead>
+<tbody id="rows"></tbody></table></div><p id="status" role="status">Loading scores…</p></section>
+<p class="muted" id="identity-policy"></p><p class="muted">Submit a compiled model artifact, not a weights-only checkpoint requiring a separate architecture definition. The challenge evaluator determines the supported format.</p>
+<dialog id="logs-dialog"><div class="topline"><h2>Evaluation logs</h2><button id="close-logs" type="button">Close</button></div><p id="log-submission" class="muted"></p><pre id="log-content"></pre><p class="muted">Correct the compiled model and submit again. These diagnostics are public; full process logs are private to the organizers.</p></dialog>
+</main></body></html>
