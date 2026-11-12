@@ -1,0 +1,28 @@
+[project]
+name = "stable-challenge-world-models"
+version = "0.1.0"
+description = "Self-supervised action-conditioned world model challenge with an ONNX evaluation"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy",
+  "scikit-learn",
+  "onnx",
+  "onnxruntime-gpu==1.22.*; sys_platform == 'linux'",
+  "onnxruntime==1.22.*; sys_platform != 'linux'",
+  "torch",
+  "torchvision",
+  "stable-pretraining>=0.1.8",
+]
+
+[tool.uv]
+package = false
+
+[[tool.uv.index]]
+name = "pytorch-cu126"
+url = "https://download.pytorch.org/whl/cu126"
+explicit = true
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cu126", marker = "sys_platform == 'linux'" }]
+torchvision = [{ index = "pytorch-cu126", marker = "sys_platform == 'linux'" }]
