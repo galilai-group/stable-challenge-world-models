@@ -4,10 +4,13 @@
   "description": "",
   "metric": "score",
   "direction": "maximize",
-  "evaluator_version": "v1",
+  "evaluator_version": "eval-26399418f838c8d804302c928dd04012",
   "closes_at": null,
   "anonymous": true,
   "accepting_submissions": true,
+  "max_bytes": 20971520,
+  "daily_limit": 5,
+  "repository": "galilai-group/stable-challenge-world-models",
   "service_url": "https://script.google.com/macros/s/AKfycbz-LjlcVuaQ0fbjhPGhYtDi4XxTItsGMrmSXUkP4X59IkPv6WF-sJ-P3dHDJtJlBTb5/exec",
   "submit_url": "https://script.google.com/macros/s/AKfycbz-LjlcVuaQ0fbjhPGhYtDi4XxTItsGMrmSXUkP4X59IkPv6WF-sJ-P3dHDJtJlBTb5/exec?challenge=stable-challenge-world-models"
 }

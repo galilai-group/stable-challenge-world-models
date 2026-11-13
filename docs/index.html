@@ -1,15 +1,20 @@
 <!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Challenge leaderboard</title><link rel="stylesheet" href="style.css">
-<script src="leaderboard.js" defer></script></head><body><main>
+<script src="https://cdn.jsdelivr.net/npm/marked@14.1.4/marked.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.4/dist/purify.min.js" defer></script>
+<script src="leaderboard.js" defer></script><script src="challenge.js" defer></script></head><body><main>
 <p class="eyebrow">RESEARCH CHALLENGE</p>
 <div class="topline"><h1 id="title">Leaderboard</h1><a id="submit" class="button" hidden>Submit compiled model</a></div>
 <p id="description"></p><p class="muted" id="details"></p><p class="limits" id="limits"></p>
-<section class="card"><div class="topline"><h2>Leaderboard</h2>
+<nav class="page-nav" id="page-nav" aria-label="Sections" hidden><a href="#leaderboard">Leaderboard</a><a href="#challenge">Challenge guide</a></nav>
+<section class="card" id="leaderboard"><div class="topline"><h2>Leaderboard</h2>
 <input type="search" id="search" aria-label="Find a participant" placeholder="Find participant…"></div>
 <label for="group-filter" id="group-filter-label">Filter by group</label><select id="group-filter"><option value="">All participants</option></select><p class="muted" id="policy"></p><div class="table-wrap"><table>
 <thead><tr id="columns"></tr></thead>
 <tbody id="rows"></tbody></table></div><p id="status" role="status">Loading scores…</p></section>
 <p class="muted" id="identity-policy"></p><p class="muted">Submit a compiled model artifact, not a weights-only checkpoint requiring a separate architecture definition. The challenge evaluator determines the supported format.</p>
 <dialog id="logs-dialog"><div class="topline"><h2>Evaluation logs</h2><button id="close-logs" type="button">Close</button></div><p id="log-submission" class="muted"></p><pre id="log-content"></pre><p class="muted">Correct the compiled model and submit again. These diagnostics are public; full process logs are private to the organizers.</p></dialog>
+<section class="card guide" id="challenge" hidden><div class="topline"><h2>Challenge guide</h2><a id="challenge-source" class="muted" target="_blank" rel="noopener">View CHALLENGE.md on GitHub</a></div>
+<div class="guide-layout"><nav class="toc" id="toc" aria-label="Guide contents"></nav><article class="prose" id="challenge-content"></article></div></section>
 </main></body></html>
