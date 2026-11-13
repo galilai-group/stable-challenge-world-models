@@ -3,11 +3,39 @@
   "groups": [],
   "metric": "score",
   "metrics": [
-    "score"
+    "score",
+    "score_point_maze_inverse",
+    "score_point_maze_plan",
+    "score_point_maze_position",
+    "score_point_maze_velocity",
+    "score_wall_inverse",
+    "score_wall_plan",
+    "score_wall_position"
   ],
   "direction": "maximize",
   "evaluator_version": "eval-26399418f838c8d804302c928dd04012",
-  "rows": [],
-  "revision": 2,
-  "updated_at": "2026-11-13T00:01:42.134Z"
+  "rows": [
+    {
+      "rank": 1,
+      "participant": "66e6786978cc9d80",
+      "participant_id": "66e6786978cc9d80",
+      "groups": [],
+      "score": 0.999999,
+      "metrics": {
+        "score": 0.999999,
+        "score_point_maze_position": 1,
+        "score_point_maze_velocity": 0.999999,
+        "score_point_maze_inverse": 0.999999,
+        "score_point_maze_plan": 0.999998,
+        "score_wall_position": 0.999998,
+        "score_wall_inverse": 1,
+        "score_wall_plan": 1
+      },
+      "status": "succeeded",
+      "submission_id": "660172a18a0e65cdd391608cb32466d6a5e218f5a41467c67bae8f62fbb87d66",
+      "submitted_at": "2026-11-13T00:03:11.652Z"
+    }
+  ],
+  "revision": 3,
+  "updated_at": "2026-11-13T00:07:36.191Z"
 }
